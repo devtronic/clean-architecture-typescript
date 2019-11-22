@@ -1,4 +1,4 @@
-import {ToDo} from "../entity";
+import {ToDo} from '../entity';
 
 export abstract class TodoRepository {
     public abstract getAllToDos(): Promise<ToDo[]>;
