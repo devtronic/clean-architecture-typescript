@@ -2,7 +2,9 @@ import {IUseCase} from '../arch';
 import {InteractionService} from '../service';
 import {TodoRepository} from '../repository';
 import {ShowToDoListUseCase} from './show-to-do-list.use-case';
+import {Injectable} from '@angular/core';
 
+@Injectable({providedIn: 'root'})
 export class DeleteToDoUseCase implements IUseCase<number, void> {
     readonly presenter: void;
 

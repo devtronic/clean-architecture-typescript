@@ -3,6 +3,7 @@ import {ToDo} from '../entity';
 import {InteractionService} from '../service';
 import {TodoRepository} from '../repository';
 import {ShowToDoListUseCase} from './show-to-do-list.use-case';
+import {Injectable} from '@angular/core';
 
 export class EditToDoRequest {
 
@@ -13,6 +14,7 @@ export class EditToDoRequest {
     }
 }
 
+@Injectable({providedIn: 'root'})
 export class EditToDoUseCase implements IUseCase<EditToDoRequest, void> {
     readonly presenter: void;
 
