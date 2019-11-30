@@ -27,19 +27,19 @@ export class TodoListComponent {
     useCase.execute();
   }
 
-public addToDo() {
-  this.addToDoUseCase.execute();
-}
+  public addToDo() {
+    this.addToDoUseCase.execute();
+  }
 
-public setToDoState(id: number, todo: ToDo) {
-  this.editToDoUseCase.execute({id, todo, onlyToggleDone: true})
-}
+  public setToDoState(id: number, todo: ToDo) {
+    this.editToDoUseCase.execute({id, todo, onlyToggleDone: true})
+  }
 
-public editToDo(id: number, todo: ToDo) {
-  this.editToDoUseCase.execute({id, todo, onlyToggleDone: false})
-}
+  public editToDo(id: number, todo: ToDo) {
+    this.editToDoUseCase.execute({id, todo, onlyToggleDone: false})
+  }
 
-public deleteToDo(id: number) {
-  this.deleteToDoUseCase.execute(id);
-}
+  public deleteToDo(id: number) {
+    this.deleteToDoUseCase.execute(id);
+  }
 }
